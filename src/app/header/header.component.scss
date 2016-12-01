@@ -1,0 +1,33 @@
+@import "variables";
+.paretto__header {
+  background-color: $dark-color;
+  color: $light-color;
+  overflow: auto;
+  padding: 1rem 0;
+
+  .header__logo {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    a {
+      color: $light-color;
+      font-size: 2em;
+      line-height: 1;
+      span {
+        color: $contrast-color;
+      }
+      small {
+        font-size: .4em;
+        display: block;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .header__usermenu {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    line-height: 100%;
+  }
+}
