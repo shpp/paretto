@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class ParretoPage {
+export class ParettoPage {
   navigateTo() {
     return browser.get('/');
   }

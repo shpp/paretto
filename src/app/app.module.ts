@@ -13,10 +13,10 @@ import { SearchComponent } from './subheader/search/search.component';
 import { PaletteListComponent } from './palettes/palette-list/palette-list.component';
 import { PaletteDetailComponent } from './palettes/palette-detail/palette-detail.component';
 import { PaletteItemComponent } from './palettes/palette-list/palette-item.component';
-import { ParretoMainComponent } from './parreto-main/parreto-main.component';
-import { ParretoListComponent } from './parreto-list/parreto-list.component';
-import { ParretoEditComponent } from './parreto-edit/parreto-edit.component';
-import { ParretoAdminComponent } from './parreto-admin/parreto-admin.component';
+import { ParettoMainComponent } from './paretto-main/paretto-main.component';
+import { ParettoListComponent } from './paretto-list/paretto-list.component';
+import { ParettoEditComponent } from './paretto-edit/paretto-edit.component';
+import { ParettoAdminComponent } from './paretto-admin/paretto-admin.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +28,10 @@ import { ParretoAdminComponent } from './parreto-admin/parreto-admin.component';
     PaletteListComponent,
     PaletteDetailComponent,
     PaletteItemComponent,
-    ParretoMainComponent,
-    ParretoListComponent,
-    ParretoEditComponent,
-    ParretoAdminComponent,
+    ParettoMainComponent,
+    ParettoListComponent,
+    ParettoEditComponent,
+    ParettoAdminComponent,
   ],
   imports: [
     BrowserModule,

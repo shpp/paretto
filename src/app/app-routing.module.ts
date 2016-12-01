@@ -1,17 +1,17 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ParretoMainComponent } from './parreto-main/parreto-main.component.ts';
-import { ParretoListComponent } from './parreto-list/parreto-list.component.ts';
-import { ParretoEditComponent } from './parreto-edit/parreto-edit.component.ts';
-import { ParretoAdminComponent } from './parreto-admin/parreto-admin.component.ts';
+import { ParettoMainComponent } from './paretto-main/paretto-main.component.ts';
+import { ParettoListComponent } from './paretto-list/paretto-list.component.ts';
+import { ParettoEditComponent } from './paretto-edit/paretto-edit.component.ts';
+import { ParettoAdminComponent } from './paretto-admin/paretto-admin.component.ts';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/parreto', pathMatch: 'full' },
-  { path: 'parreto',  component:  ParretoMainComponent},
-  { path: 'parreto/list', component: ParretoListComponent},
-  { path: 'parreto/edit/:id', component: ParretoEditComponent },
-  { path: 'parreto/admin', component: ParretoAdminComponent }
+  { path: '', redirectTo: '/paretto', pathMatch: 'full' },
+  { path: 'paretto',  component:  ParettoMainComponent},
+  { path: 'paretto/list', component: ParettoListComponent},
+  { path: 'paretto/edit/:id', component: ParettoEditComponent },
+  { path: 'paretto/admin', component: ParettoAdminComponent }
 ];
 
 @NgModule({
