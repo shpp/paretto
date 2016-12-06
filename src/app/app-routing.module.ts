@@ -7,11 +7,12 @@ import { ParretoEditComponent } from './parreto-edit/parreto-edit.component.ts';
 import { ParretoAdminComponent } from './parreto-admin/parreto-admin.component.ts';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/parreto', pathMatch: 'full' },
   { path: 'parreto',  component:  ParretoMainComponent},
   { path: 'parreto/list', component: ParretoListComponent},
   { path: 'parreto/edit/:id', component: ParretoEditComponent },
-  { path: 'parreto/admin', component: ParretoAdminComponent }
+  { path: 'parreto/admin', component: ParretoAdminComponent },
+  { path: '', redirectTo: '/parreto', pathMatch: 'full' },
+  /*{ path: '**', component: NotFoundComponent }*/
 ];
 
 @NgModule({
