@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ParretoEditComponent } from './parreto-edit.component';
+import { ParettoListComponent } from './paretto-list.component';
 
-describe('ParretoEditComponent', () => {
-  let component: ParretoEditComponent;
-  let fixture: ComponentFixture<ParretoEditComponent>;
+describe('ParettoListComponent', () => {
+  let component: ParettoListComponent;
+  let fixture: ComponentFixture<ParettoListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParretoEditComponent ]
+      declarations: [ ParettoListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParretoEditComponent);
+    fixture = TestBed.createComponent(ParettoListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

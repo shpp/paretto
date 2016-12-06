@@ -1,10 +1,10 @@
-import { ParretoPage } from './app.po';
+import { ParettoPage } from './app.po';
 
-describe('parreto App', function() {
-  let page: ParretoPage;
+describe('paretto App', function() {
+  let page: ParettoPage;
 
   beforeEach(() => {
-    page = new ParretoPage();
+    page = new ParettoPage();
   });
 
   it('should display message saying app works', () => {

@@ -1,4 +1,4 @@
-# Parreto
+# Paretto
 Web application that provides ability to create personal colour pallets collection and use it for the future inspiration.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
