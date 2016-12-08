@@ -7,11 +7,11 @@ import { ParettoEditComponent } from './paretto-edit/paretto-edit.component.ts';
 import { ParettoAdminComponent } from './paretto-admin/paretto-admin.component.ts';
 
 const routes: Routes = [
-  { path: 'parreto',  component:  ParretoMainComponent},
-  { path: 'parreto/list', component: ParretoListComponent},
-  { path: 'parreto/edit/:id', component: ParretoEditComponent },
-  { path: 'parreto/admin', component: ParretoAdminComponent },
-  { path: '', redirectTo: '/parreto', pathMatch: 'full' },
+  { path: 'paretto',  component:  ParettoMainComponent},
+  { path: 'paretto/list', component: ParettoListComponent},
+  { path: 'paretto/edit/:id', component: ParettoEditComponent },
+  { path: 'paretto/admin', component: ParettoAdminComponent },
+  { path: '', redirectTo: 'paretto', pathMatch: 'full' },
   /*{ path: '**', component: NotFoundComponent }*/
 ];
 

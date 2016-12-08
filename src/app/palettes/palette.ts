@@ -1,3 +1,8 @@
 export class Palette {
-  constructor (public paletteId:number, public paletteColors:Array<string>){}
+  paletteId: number;
+  paletteColors: Array<string>;
+  constructor (id:number, colors:Array<string>){
+    this.paletteId = id;
+    this.paletteColors = colors;
+  }
 }

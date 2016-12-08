@@ -4,7 +4,7 @@
       <span>Create new palette</span>
     </li>
   </a>
-  <a [routerLink]="['/parreto/edit', palette.paletteId]" (click)="onSelected(palette)">
+  <a *ngFor="let palette of palettes" [routerLink]="['/paretto/edit', palette.paletteId]" (click)="onSelected(palette)">
     <li class="paretto__list-item">
       <app-palette-item [palette]="palette" ></app-palette-item>
     </li>
