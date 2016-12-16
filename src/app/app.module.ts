@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +19,11 @@ import { ParettoListComponent } from './paretto-list/paretto-list.component';
 import { ParettoEditComponent } from './paretto-edit/paretto-edit.component';
 import { ParettoAdminComponent } from './paretto-admin/paretto-admin.component';
 
+import { AuthService } from './authentication/auth.service';
+import { AuthGuard } from './authentication/auth.guard';
+import { SigninComponent } from './authentication/signin/signin.component';
+import { SingupComponent } from './authentication/singup/singup.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,14 +38,16 @@ import { ParettoAdminComponent } from './paretto-admin/paretto-admin.component';
     ParettoListComponent,
     ParettoEditComponent,
     ParettoAdminComponent,
+    SigninComponent,
+    SingupComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

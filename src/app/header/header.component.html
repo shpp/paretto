@@ -1,13 +1,18 @@
 <header class="paretto__header">
   <div class="p-container">
     <div class="header__logo">
-      <a>
+      <a [routerLink]="['paretto']">
         Pare<span>t</span>to
         <small>パレ<span>ッ</span>ト</small>
       </a>
     </div>
-    <div class="header__usermenu">
-      {{username}}
-    </div>
+    <nav>
+      <a [routerLink]="['paretto/signup']">Sign Up</a>
+      <a *ngIf="!isAuth()" [routerLink]="['paretto/signin']">Sign In</a>
+      <a *ngIf="isAuth()" (click)="onLogout()" style="cursor: pointer;">Logout</a>
+      <span *ngIf="isAuth()" class="header__usermenu">
+        {{getUserName()}}
+      </span>
+    </nav>
   </div>
 </header>

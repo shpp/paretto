@@ -1,0 +1,22 @@
+{
+    "palettes": [{
+            "paletteId": 1,
+            "paletteColors": ["red","orange","yellow","green"]
+        },
+        {
+            "paletteId": 2,
+            "paletteColors": ["red","orange","yellow","green"]
+        },
+        {
+            "paletteId": 3,
+            "paletteColors": ["red","orange","yellow","green"]
+        },
+        {
+            "paletteId": 4,
+            "paletteColors": ["red","orange","yellow","green"]
+        },
+        {
+            "paletteId": 5,
+            "paletteColors": ["red","orange","yellow","green"]
+    }]
+}

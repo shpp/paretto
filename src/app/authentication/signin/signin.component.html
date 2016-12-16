@@ -1,0 +1,27 @@
+<!-- <div class="paretto-signIn">
+  <form [formGroup]="myForm" (ngSubmit)="onSignin()">
+    <h3>Please sign up to use all features</h3>
+    <input formControlName="email" type="email" id="email" class="form-control" placeholder="E-Mail">
+    <label for="password">Password</label>
+    <input formControlName="password" type="password" id="password" class="form-control">
+    <button type="submit" [disabled]="!myForm.valid">Sign In</button>
+  </form>
+</div> -->
+<div class="login">
+    <h1>Sign in</h1>
+
+    <form class="form" [formGroup]="myForm" (ngSubmit)="onSignin()">
+
+      <p class="field">
+        <input formControlName="email" type="email" id="email" placeholder="Email" required/>
+      </p>
+
+      <p class="field">
+        <input formControlName="password" type="password" id="password" placeholder="Password" required/>
+      </p>
+
+      <p class="submit"><input type="submit" [disabled]="!myForm.valid" name="sent" value="Sign in"></p>
+
+
+    </form>
+  </div>

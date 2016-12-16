@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables.scss";
 .paretto__header {
   background-color: $dark-color;
   color: $light-color;
@@ -24,10 +24,22 @@
     }
   }
 
-  .header__usermenu {
+
+
+  nav {
     display: inline-block;
-    vertical-align: top;
-    float: right;
-    line-height: 100%;
+    padding: .4rem 0;
+    float:right;
+    a {
+      font-size: 1.4em;
+      vertical-align: middle;
+      margin-right: 1rem;
+      &:hover {
+        color: $lite-contrast-color;
+      }
+    }
+    .header__usermenu {
+      margin-top: .2rem;
+    }
   }
 }

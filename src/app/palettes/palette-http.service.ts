@@ -13,15 +13,13 @@ export class PaletteHttpService {
     constructor(private http: Http){ }
 
     getPalettes() : Observable<Palette[]>{
-        return this.http.get('palettes.json')
+        return this.http.get('https://paretto-18bb2.firebaseio.com/palettes.json')
                     .map((resp:Response) => {
                         let result = resp.json()
                         console.log(result);
                         return result;
                     })
-                    .catch((error: any)=> {
-                        return Observable.throw(error);
-                    });
+                    .catch(this.handleError);
     }
 
     createPalette(colors: Array<string>) {
@@ -34,6 +32,10 @@ export class PaletteHttpService {
 
     updatePalette(paletteId: number) {
 
+    }
+
+    private handleError (error: any) {
+      return Observable.throw(error);
     }
 
 }
